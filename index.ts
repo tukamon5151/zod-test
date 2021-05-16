@@ -45,4 +45,18 @@ try {
     console.log(invalidPost) // not run
 } catch (e) {
     console.log(e)
+    /**
+    ZodError: [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "undefined",
+        "path": [
+          "user",
+          "name"
+        ],
+        "message": "Required"
+      }
+    ]
+     **/
 }
