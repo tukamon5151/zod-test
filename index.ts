@@ -37,10 +37,10 @@ const invalidJson = JSON.stringify({
 })
 
 try {
-    const validPost = Post.parse(JSON.parse(validJson))
+    const validPost: Post = Post.parse(JSON.parse(validJson))
     console.log('validPost parse success')
     console.log(validPost)
-    const invalidPost = Post.parse(JSON.parse(invalidJson))
+    const invalidPost: Post = Post.parse(JSON.parse(invalidJson))
     console.log('invalidPost parse success') // not run
     console.log(invalidPost) // not run
 } catch (e) {
